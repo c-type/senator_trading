@@ -1,0 +1,1 @@
+from .senator_trading import Trades
