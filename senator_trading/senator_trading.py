@@ -148,20 +148,4 @@ class Trades:
 
 
 
-##%% trades last month
-#
-#today = datetime.datetime.now()
-#days_30 = datetime.timedelta(days=30)
-#last_month = today - days_30
-#
-#df_last_month = df[df['date']>=last_month]
-#
-#traded_stocks = df_last_month['stock'].unique()
-#
-#col_names = ['stock', 'amount', 'action', 'n_senator']
-#df_stocks_sorted = pd.DataFrame(data=np.zeros((len(traded_stocks), len(col_names))),columns=col_names)
-#
-#for i, stock in enumerate(traded_stocks):
-#    df_stock = df_last_month[df_last_month['stock']==stock]
-#    df_interim = pd.DataFrame(data=[stock, df_stock['amount'].sum(), 0, len(df_stock['senator'].unique())], columns=col_names)
-#    df_stocks_sorted = pd.concat([df_stocks_sorted, df_interim])
+
