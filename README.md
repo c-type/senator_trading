@@ -1,15 +1,15 @@
-senator_trading
------
+# senator_trading
 
+## What it does
 Reads in publicly available information on stock trading activity of US senators.
 
-
+## How to Install
 Can be installed via pip:
 ```
 pip install senator_trading
 ```
 
-
+## How to run
 To use, do (or run sample_script.py) in python:
 
 ```
@@ -25,3 +25,5 @@ fig, ax = trades_obj.plot_trade_vol()
 
 ```
 
+## Example Output
+![Alt text](trading_volume.png?raw=true "Title")
